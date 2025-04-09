@@ -27,6 +27,17 @@ A modern web app to generate stylish, printable student ID cards with image uplo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/ankitjhagithub21/student-id-generator.git
+git clone https://github.com/ankitjhagithub21/student-id-generator.git 
+```
+```bash
 cd student-id-generator
+```
+```bash
 npm install
+```
+
+```bash
+npm run dev
+```
+
+Visit http://localhost:5173 in your browser.
