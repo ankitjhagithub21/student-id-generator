@@ -129,7 +129,7 @@ const App = () => {
             </div>
           ))}
         </div> : <main className="px-5 min-h-screen py-10">
-          <div className="max-w-4xl mx-auto flex flex-wrap">
+          <div className="max-w-4xl flex flex-wrap mx-auto gap-10">
             <StudentForm
               studentData={studentData}
               handleChange={handleChange}
