@@ -6,7 +6,7 @@ const Template2 = ({ student, cardRef }) => {
   return (
 
     <div className="w-[320px] scale-100" ref={cardRef}>
-      <div className="bg-white rounded-xl overflow-hidden shadow-md border border-slate-200 flex flex-col h-full">
+      <div className="bg-white rounded-xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
 
         {/* Top Banner */}
         <div className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white px-4 py-3">
@@ -19,7 +19,7 @@ const Template2 = ({ student, cardRef }) => {
           <img
             src={
               student.photo
-                ? URL.createObjectURL(student?.photo)
+                ? URL.createObjectURL(student.photo)
                 : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
             }
             alt="student"

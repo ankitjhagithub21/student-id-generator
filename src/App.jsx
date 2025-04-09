@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { toPng } from "html-to-image";
 import "./App.css";
+import Card from "./components/Card";
 
 const App = () => {
   const initialData = {
@@ -65,7 +66,7 @@ const App = () => {
 
   const downloadCard = async () => {
     if (!isFormValid()) {
-      
+
       return
     };
 
@@ -108,25 +109,10 @@ const App = () => {
       />
 
       {
-        showCards ? <div className="flex flex-wrap gap-10 my-5 min-h-screen w-full  px-5">
+        showCards ? <div className="grid md:grid-cols-4 grid-cols-2 min-h-screen py-10 px-5">
 
-          { olderCards.length === 0 ? <p>No Card Found.</p> : olderCards.map((card, index) => (
-            <div key={index} className=" flex flex-col mx-auto">
-
-              <div ref={(el) => (oldCardRefs.current[index] = el)}>
-                {template === 1
-                  ? <Template1 student={card} cardRef={null} />
-                  : <Template2 student={card} cardRef={null} />
-                }
-              </div>
-
-              <button
-                onClick={() => downloadOldCard(index, card.name)}
-                className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-              >
-                Download This Card
-              </button>
-            </div>
+          {olderCards.length === 0 ? <p>No Card Found.</p> : olderCards.map((card, index) => (
+            <Card key={index} index={index} downloadOldCard={downloadOldCard} card={card} ref={(el) => (oldCardRefs.current[index] = el)} />
           ))}
         </div> : <main className="px-5 min-h-screen py-10">
           <div className="max-w-4xl flex flex-wrap mx-auto gap-10">
