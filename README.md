@@ -1,12 +1,32 @@
-# React + Vite
+# Student ID Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web app to generate stylish, printable student ID cards with image upload, QR code, and customizable templates — built using **React (Vite)**, **Tailwind CSS**, and **DaisyUI**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📋 Student details form (Name, Roll Number, Class, Allergies, etc.)
+- 🖼 Upload student photo
+- 🧾 Generate visually appealing ID card templates
+- 📎 Built-in QR code for student data
+- 🖨 Download ID card as an image (via `html-to-image`)
+- 🎨 Multiple design templates (Template1, Template2)
+- ⚡ Fast & lightweight (thanks to Vite)
 
-## Expanding the ESLint configuration
+## 🚀 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/) (for pre-built components)
+- [Lucide React](https://lucide.dev/) (for icons)
+- [qrcode.react](https://github.com/zpao/qrcode.react)
+- [html-to-image](https://github.com/bubkoo/html-to-image)
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/ankitjhagithub21/student-id-generator.git
+cd student-id-generator
+npm install
