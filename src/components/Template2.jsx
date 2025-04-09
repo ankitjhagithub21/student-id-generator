@@ -19,7 +19,7 @@ const Template2 = ({ student, cardRef }) => {
           <img
             src={
               student.photo
-                ? URL.createObjectURL(student.photo)
+                ? URL.createObjectURL(student?.photo)
                 : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
             }
             alt="student"

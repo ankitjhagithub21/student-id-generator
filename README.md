@@ -10,6 +10,8 @@ A modern web app to generate stylish, printable student ID cards with image uplo
 - 📎 Built-in QR code for student data
 - 🖨 Download ID card as an image (via `html-to-image`)
 - 🎨 Multiple design templates (Template1, Template2)
+- 🃏 Card Persistent
+-  ⬆ Download Old Cards as well
 - ⚡ Fast & lightweight (thanks to Vite)
 
 ## 🚀 Technologies Used
@@ -41,3 +43,11 @@ npm run dev
 ```
 
 Visit http://localhost:5173 in your browser.
+
+
+## screenshots
+
+
+![alt text](image.png)
+
+![alt text](image-1.png)

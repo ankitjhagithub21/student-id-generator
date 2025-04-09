@@ -21,7 +21,7 @@ const Navbar = ({setTemplate,onDownload,onClear,isDownloadDisabled,setShowCards}
                         <li onClick={()=>setShowCards(true)}><a>My Cards</a></li>
                     </ul>
                 </div>
-                <button className="btn btn-dark text-xl">
+                <button className="btn btn-dark text-xl  md:block hidden">
                 Smart Student Id Generator
                 </button>
             </div>

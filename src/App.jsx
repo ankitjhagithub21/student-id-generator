@@ -110,7 +110,7 @@ const App = () => {
       {
         showCards ? <div className="flex flex-wrap gap-10 my-5 min-h-screen w-full  px-5">
 
-          { olderCards.length===0 ? <p>No Card Found.</p> : olderCards.map((card, index) => (
+          { olderCards.length === 0 ? <p>No Card Found.</p> : olderCards.map((card, index) => (
             <div key={index} className=" flex flex-col mx-auto">
 
               <div ref={(el) => (oldCardRefs.current[index] = el)}>
