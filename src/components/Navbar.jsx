@@ -1,5 +1,5 @@
 
-const Navbar = ({setTemplate,onDownload,onClear}) => {
+const Navbar = ({setTemplate,onDownload,onClear,isDownloadDisabled,setShowCards}) => {
     return (
         <header className="navbar bg-base-100 sticky top-0 w-full shadow-sm z-50">
             <div className="navbar-start">
@@ -10,7 +10,7 @@ const Navbar = ({setTemplate,onDownload,onClear}) => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
+                        <li onClick={()=>setShowCards(false)}><a>Home</a></li>
                         <li>
                             <a>Choose Template</a>
                             <ul className="p-2">
@@ -18,7 +18,7 @@ const Navbar = ({setTemplate,onDownload,onClear}) => {
                                 <li><a onClick={()=>setTemplate(2)}>Template 2</a></li>
                             </ul>
                         </li>
-                        <li><a>Item 3</a></li>
+                        <li onClick={()=>setShowCards(true)}><a>My Cards</a></li>
                     </ul>
                 </div>
                 <button className="btn btn-dark text-xl">
@@ -27,7 +27,7 @@ const Navbar = ({setTemplate,onDownload,onClear}) => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
+                    <li onClick={()=>setShowCards(false)}><a>Home</a></li>
                     <li>
                         <details>
                             <summary>Choose Template</summary>
@@ -37,11 +37,11 @@ const Navbar = ({setTemplate,onDownload,onClear}) => {
                             </ul>
                         </details>
                     </li>
-                    <li><a>Item 3</a></li>
+                    <li onClick={()=>setShowCards(true)}><a>My Cards</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn mx-2 btn-secondary" onClick={onDownload}>Download as Png</button>
+                <button disabled={isDownloadDisabled} className="btn mx-2 btn-secondary" onClick={onDownload}>Download as Png</button>
                 <button className="btn btn-warning" onClick={onClear}>Clear</button>
             </div>
         </header>

@@ -4,7 +4,7 @@ import { QRCodeSVG } from 'qrcode.react';
 
 const Template1 = ({ student, cardRef }) => {
   return (
-  <div className='md:w-1/2 w-full px-5'>
+ 
       <div className="max-w-[320px] w-full scale-100" ref={cardRef}>
       <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-slate-200">
         {/* Header */}
@@ -97,7 +97,7 @@ const Template1 = ({ student, cardRef }) => {
         </div>
       </div>
     </div>
-  </div>
+  
   );
 };
 
