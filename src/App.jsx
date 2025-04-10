@@ -109,7 +109,7 @@ const App = () => {
       />
 
       {
-        showCards ? <div className="grid md:grid-cols-4 grid-cols-2 min-h-screen py-10 px-5">
+        showCards ? <div className="grid md:grid-cols-4 md:grid-cols-2 grid-cols-1 min-h-screen py-10 px-5">
 
           {olderCards.length === 0 ? <p>No Card Found.</p> : olderCards.map((card, index) => (
             <Card key={index} index={index} downloadOldCard={downloadOldCard} card={card} ref={(el) => (oldCardRefs.current[index] = el)} />
